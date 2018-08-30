@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Balooga.AccountPage">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout BackgroundColor="AliceBlue">
+                <BoxView HeightRequest="50" />
+                <Label 
+                Text="Create an Account" 
+                HorizontalOptions="Center"
+                FontSize="Large"/>
+                <BoxView HeightRequest="50" />
+                <StackLayout Orientation="Horizontal" BackgroundColor="White">
+                    <BoxView Color="Blue" WidthRequest="80" />
+                    <Entry x:Name="username" Placeholder="Username" HorizontalOptions="FillAndExpand"/>
+                    <BoxView Color="Blue" WidthRequest="80" />
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" BackgroundColor="White">
+                    <BoxView Color="Blue" WidthRequest="80" />
+                    <Entry x:Name="email" Placeholder="Email Address" HorizontalOptions="FillAndExpand"/>
+                    <BoxView Color="Blue" WidthRequest="80" />
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" BackgroundColor="White">
+                    <BoxView Color="Blue" WidthRequest="80" />
+                    <Entry x:Name="email2" Placeholder="Retype Email Address" HorizontalOptions="FillAndExpand"/>
+                    <BoxView Color="Blue" WidthRequest="80" />
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" BackgroundColor="White">
+                    <BoxView Color="Blue" WidthRequest="80" />
+                    <Entry x:Name="password" IsPassword="True" Placeholder="Password" HorizontalOptions="FillAndExpand"/>
+                    <BoxView Color="Blue" WidthRequest="80" />
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" BackgroundColor="White">
+                    <BoxView Color="Blue" WidthRequest="80" />
+                    <Entry x:Name="password2" IsPassword="True" Placeholder="Retype Password" HorizontalOptions="FillAndExpand"/>
+                    <BoxView Color="Blue" WidthRequest="80" />
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" BackgroundColor="White">
+                    <BoxView Color="Blue" WidthRequest="80" />
+                    <Entry x:Name="fname" Placeholder="First Name" HorizontalOptions="FillAndExpand"/>
+                    <BoxView Color="Blue" WidthRequest="80" />
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" BackgroundColor="White">
+                    <BoxView Color="Blue" WidthRequest="80" />
+                    <Entry x:Name="lname" Placeholder="Last Name" HorizontalOptions="FillAndExpand"/>
+                    <BoxView Color="Blue" WidthRequest="80" />
+                </StackLayout>
+                <!--<BoxView Color="Green" HeightRequest="50" />-->
+                <Button
+                x:Name="ButtonCreateAccount"
+                Clicked="CreateAccountt"
+                Text="Create Account" 
+                HorizontalOptions="Center"/>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

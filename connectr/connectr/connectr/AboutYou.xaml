@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="connectr.AboutYou">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Tell us About You"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+
+            <Entry x:Name="fnEntry"
+                Placeholder="First Name*"
+                HorizontalTextAlignment="Center"/>
+
+            <Entry x:Name="miEntry"
+                Placeholder="Middle Initial"
+                HorizontalTextAlignment="Center"/>
+
+            <Entry x:Name="lnEntry"
+                Placeholder="Last Name*"
+                HorizontalTextAlignment="Center"/>
+
+            <Entry x:Name="suffixEntry"
+                Placeholder="Suffix"
+                HorizontalTextAlignment="Center"/>
+
+            <DatePicker Format="MM-dd-yyyy"
+                MinimumDate="Jan 1 1900"
+                MaximumDate="Dec 31 2080"  
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="CenterAndExpand"/>
+
+            <Button x:Name="saveButton"
+               Text="Save and Exit"
+               VerticalOptions="Center"
+               HorizontalOptions="Center"
+               TextColor="DarkOliveGreen"
+               FontAttributes="Bold"
+               Clicked="SaveButtonClicked"/>
+
+            <Button x:Name="continueButton"
+               Text="Continue"
+               VerticalOptions="Center"
+               HorizontalOptions="Center"
+               TextColor="DarkOliveGreen"
+               FontAttributes="Bold"
+               Clicked="ContinueButtonClicked"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

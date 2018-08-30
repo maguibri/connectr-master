@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Balooga.App3">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <BoxView BackgroundColor="Red" HeightRequest="80" />
+                <Label Text="Personal Identification Info" 
+                HorizontalOptions="CenterAndExpand"
+                FontSize="Large"/>
+                <BoxView BackgroundColor="Green" HeightRequest="30" />
+                <StackLayout Orientation="Horizontal" BackgroundColor="White">
+                    <BoxView Color="Blue" WidthRequest="80" />
+                    <Entry x:Name="mMaidenName" Placeholder="Mother's Maiden Name" HorizontalOptions="FillAndExpand"/>
+                    <BoxView Color="Blue" WidthRequest="80" />
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" BackgroundColor="White">
+                    <BoxView Color="Blue" WidthRequest="80" />
+                    <Entry x:Name="ssn" Placeholder="Social Security Number" HorizontalOptions="FillAndExpand"/>
+                    <BoxView Color="Blue" WidthRequest="80" />
+                </StackLayout>
+                <BoxView BackgroundColor="Red" HeightRequest="50" />
+                <Label Text="Housing Info" 
+                HorizontalOptions="CenterAndExpand"
+                FontSize="Large"/>
+                <BoxView BackgroundColor="Green" HeightRequest="30" />
+                <StackLayout Orientation="Horizontal" BackgroundColor="White">
+                    <BoxView Color="Blue" WidthRequest="70" />
+                    <Entry x:Name="housedYears" Placeholder="Years at Address" HorizontalOptions="CenterAndExpand"/>
+                    <Entry x:Name="houseStatus" Placeholder="Own or Rent" HorizontalOptions="CenterAndExpand"/>
+                    <BoxView Color="Blue" WidthRequest="80" />
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" BackgroundColor="White">
+                    <BoxView Color="Blue" WidthRequest="80" />
+                    <Entry x:Name="monthlyPayment" Placeholder="Monthly Housing Payment" HorizontalOptions="FillAndExpand"/>
+                    <BoxView Color="Blue" WidthRequest="80" />
+                </StackLayout>
+                <BoxView BackgroundColor="Green" HeightRequest="30" />
+                <StackLayout Orientation="Horizontal" BackgroundColor="Red">
+
+                    <Button Text="Save and Exit" WidthRequest="140" HorizontalOptions="CenterAndExpand"/>
+                    <Button Text="Continue" x:Name="ButtonContinue" Clicked="OpenFinancialInfo" WidthRequest="120" HorizontalOptions="CenterAndExpand"/>
+
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

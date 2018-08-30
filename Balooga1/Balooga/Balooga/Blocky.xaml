@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Balooga.Blocky">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout BackgroundColor="AliceBlue">
+                <BoxView Color="AliceBlue" HeightRequest="200" />
+                <AbsoluteLayout >
+                    <Entry 
+                    Placeholder="Username"
+                    x:Name="username"
+                    AbsoluteLayout.LayoutBounds=".5,1,.6,40" 
+                    AbsoluteLayout.LayoutFlags="YProportional,XProportional,WidthProportional" />
+                </AbsoluteLayout>
+                <AbsoluteLayout>
+                    <Entry 
+                    Placeholder="Password"
+                    x:Name="password"
+                    IsPassword="True"
+                    AbsoluteLayout.LayoutBounds=".5,1,.6,40" 
+                    AbsoluteLayout.LayoutFlags="YProportional,XProportional,WidthProportional" />
+                </AbsoluteLayout>
+
+                <Button 
+                    x:Name="ButtonLogin"
+                    Text="Login"
+                    Clicked="Login"
+                    FontSize="Medium"
+                    HorizontalOptions="Center" />
+                <BoxView Color="AliceBlue" HeightRequest="50" />
+                <Label 
+                    Text="Not a member?"
+                    HorizontalOptions="Center" />
+                <Button 
+                    x:Name="ButtonJoinNow"
+                    Clicked="GotoAccountPage"
+                    Text="Join now!"
+                    HorizontalOptions="Center"
+                    FontSize="Medium" 
+                    TextColor="Blue" />
+
+                <BoxView Color="AliceBlue" HeightRequest="100" />
+                <Button
+                    x:Name="buttonAppStatus"
+                    Clicked="GotoAppStatusPage"
+                    Text="Check App Status"
+                    HorizontalOptions="FillAndExpand"
+                    FontSize="16"
+                    TextColor="Black" />
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

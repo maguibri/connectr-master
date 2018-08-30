@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Balooga.App2">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <BoxView BackgroundColor="Red" HeightRequest="80" />
+                <Label Text="Contact Information" 
+                HorizontalOptions="CenterAndExpand"
+                FontSize="Large"/>
+                <BoxView BackgroundColor="Green" HeightRequest="30" />
+                <StackLayout Orientation="Horizontal" BackgroundColor="White">
+                    <BoxView Color="Blue" WidthRequest="80" />
+                    <Entry x:Name="address" Placeholder="Address" HorizontalOptions="FillAndExpand"/>
+                    <BoxView Color="Blue" WidthRequest="80" />
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" BackgroundColor="White">
+                    <BoxView Color="Blue" WidthRequest="80" />
+                    <Entry x:Name="aptNum" Placeholder="Apt #" HorizontalOptions="FillAndExpand"/>
+                    <BoxView Color="Blue" WidthRequest="80" />
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" BackgroundColor="White">
+                    <BoxView Color="Blue" WidthRequest="80" />
+                    <Entry x:Name="city" Placeholder="City" HorizontalOptions="FillAndExpand"/>
+                    <Entry x:Name="state" Placeholder="State" HorizontalOptions="FillAndExpand"/>
+                    <Entry x:Name="zip" Placeholder="Zip" HorizontalOptions="FillAndExpand"/>
+                    <BoxView Color="Blue" WidthRequest="80" />
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" BackgroundColor="White">
+                    <BoxView Color="Blue" WidthRequest="80" />
+                    <Entry x:Name="phoneNumber" Placeholder="Phone Number" HorizontalOptions="FillAndExpand"/>
+                    <BoxView Color="Blue" WidthRequest="80" />
+                </StackLayout>
+
+                <BoxView BackgroundColor="Pink" HeightRequest="80" />
+                <StackLayout Orientation="Horizontal" BackgroundColor="Red">
+
+                    <Button Text="Save and Exit" WidthRequest="160" HorizontalOptions="CenterAndExpand"/>
+                    <Button Text="Continue" x:Name="ButtonContinue" Clicked="OpenApp3" WidthRequest="120" HorizontalOptions="CenterAndExpand"/>
+
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

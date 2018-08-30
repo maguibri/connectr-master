@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Balooga.FinancialInfo">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <BoxView BackgroundColor="Red" HeightRequest="180" />
+                <Label Text="Financial Info" 
+                HorizontalOptions="CenterAndExpand"
+                FontSize="Large"/>
+                <BoxView BackgroundColor="Green" HeightRequest="30" />
+                <StackLayout Orientation="Horizontal" BackgroundColor="White">
+                    <BoxView Color="Blue" WidthRequest="80" />
+                    <Entry x:Name="presentEmployer" Placeholder="Present Employer" HorizontalOptions="FillAndExpand"/>
+                    <BoxView Color="Blue" WidthRequest="80" />
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" BackgroundColor="White">
+                    <BoxView Color="Blue" WidthRequest="80" />
+                    <Entry x:Name="totalAnnualIncome" Placeholder="Total Annual Income" HorizontalOptions="FillAndExpand"/>
+                    <BoxView Color="Blue" WidthRequest="80" />
+                </StackLayout>
+
+                <BoxView BackgroundColor="Green" HeightRequest="30" />
+                <StackLayout Orientation="Horizontal" BackgroundColor="Red">
+
+                    <Button Text="Save and Exit" WidthRequest="140" HorizontalOptions="CenterAndExpand"/>
+                    <Button Text="Continue" x:Name="ButtonContinue" Clicked="OpenViewAppStatus" WidthRequest="120" HorizontalOptions="CenterAndExpand"/>
+
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

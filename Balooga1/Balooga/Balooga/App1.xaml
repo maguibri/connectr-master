@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Balooga.App1">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <BoxView BackgroundColor="Red" HeightRequest="80" />
+                <Label 
+                    Text="Tell us about you" 
+                    HorizontalOptions="CenterAndExpand"
+                    FontSize="Large"/>
+                <BoxView BackgroundColor="Green" HeightRequest="30" />
+                <StackLayout Orientation="Horizontal" BackgroundColor="White">
+                    <BoxView Color="Blue" WidthRequest="80" />
+                    <Entry x:Name="firstName" Placeholder="First Name" HorizontalOptions="FillAndExpand"/>
+                    <BoxView Color="Blue" WidthRequest="80" />
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" BackgroundColor="White">
+                    <BoxView Color="Blue" WidthRequest="80" />
+                    <Entry x:Name="midInitial" Placeholder="Middle Initial" HorizontalOptions="FillAndExpand"/>
+                    <BoxView Color="Blue" WidthRequest="80" />
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" BackgroundColor="White">
+                    <BoxView Color="Blue" WidthRequest="80" />
+                    <Entry x:Name="lastName" Placeholder="Last Name" HorizontalOptions="FillAndExpand"/>
+                    <BoxView Color="Blue" WidthRequest="80" />
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" BackgroundColor="White">
+                    <BoxView Color="Blue" WidthRequest="80" />
+                    <Entry x:Name="suffix" Placeholder="Suffix" HorizontalOptions="FillAndExpand"/>
+                    <BoxView Color="Blue" WidthRequest="80" />
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" BackgroundColor="White">
+                    <BoxView Color="Blue" WidthRequest="80" />
+                    <Entry x:Name="birthDate" Placeholder="Date of Birth" HorizontalOptions="FillAndExpand"/>
+                    <BoxView Color="Blue" WidthRequest="80" />
+                </StackLayout>
+
+                <BoxView BackgroundColor="Pink" HeightRequest="80" />
+                <!--<Entry Placeholder="Testing" WidthRequest="250" HorizontalOptions="CenterAndExpand" AbsoluteLayout.LayoutFlags="WidthProportional"/>-->
+                <StackLayout Orientation="Horizontal" BackgroundColor="Red">
+
+                    <Button Text="Save and Exit" WidthRequest="160" HorizontalOptions="CenterAndExpand"/>
+                    <Button Text="Continue" x:Name="ButtonContinue" Clicked="OpenApp2" WidthRequest="120" HorizontalOptions="CenterAndExpand"/>
+
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

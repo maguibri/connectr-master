@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Balooga.ViewAppStatus">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <BoxView BackgroundColor="Red" HeightRequest="120" />
+                <Label Text="View Application Status" 
+                HorizontalOptions="CenterAndExpand"
+                FontSize="Large"/>
+                <BoxView BackgroundColor="Green" HeightRequest="30" />
+                <Label Text="Check the status of your credit card application." 
+                HorizontalOptions="CenterAndExpand"
+                FontSize="Small"/>
+                <Label Text="Enter the following information as it appears on your application." 
+                HorizontalOptions="CenterAndExpand"
+                FontSize="Small"/>
+                <BoxView BackgroundColor="Green" HeightRequest="30" />
+                <StackLayout Orientation="Horizontal" BackgroundColor="White">
+                    <BoxView Color="Blue" WidthRequest="80" />
+                    <Entry x:Name="zipcode" Placeholder="Zip Code" HorizontalOptions="FillAndExpand"/>
+                    <BoxView Color="Blue" WidthRequest="80" />
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" BackgroundColor="White">
+                    <BoxView Color="Blue" WidthRequest="80" />
+                    <Entry x:Name="lastFourSSN" Placeholder="Last 4 digits of SSN" HorizontalOptions="FillAndExpand"/>
+                    <BoxView Color="Blue" WidthRequest="80" />
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" BackgroundColor="White">
+                    <BoxView Color="Blue" WidthRequest="80" />
+                    <Entry x:Name="homePhone" Placeholder="Home Phone Number" HorizontalOptions="FillAndExpand"/>
+                    <BoxView Color="Blue" WidthRequest="80" />
+                </StackLayout>
+
+                <BoxView BackgroundColor="Green" HeightRequest="30" />
+                <StackLayout Orientation="Horizontal" BackgroundColor="Red">
+
+                    <Button 
+                    x:Name="submitButton" 
+                    Text="Submit"
+                    Clicked="GetAppStatus"
+                    WidthRequest="120" 
+                    HorizontalOptions="CenterAndExpand"/>
+
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
